@@ -16,6 +16,8 @@ html {
 .page {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+  padding: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 1.2;
@@ -33,4 +35,20 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
 }
