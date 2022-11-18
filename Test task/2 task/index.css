@@ -294,45 +294,33 @@ a {
   color: #E4E5EA;
 }
 
+.page-footer h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+
+.page-footer li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.page-footer address {
+  display: block;
+}
+
 .page-footer__row-top {
   display: flex;
 }
 
-.page-footer__col-about h2 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--second-text-color);
-}
-
 .page-footer__col-menu {
   margin-left: 98px;
-}
-
-.page-footer__col-menu h2 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--second-text-color);
-}
-
-.page-footer__col-contacts h2 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--second-text-color);
 }
 
 .page-footer__col-about ul {
@@ -344,12 +332,20 @@ a {
 .page-footer__col-menu ul {
   display: grid;
   grid-template-columns: 50% 50%;
+  column-gap: 52px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.page-footer__col-menu a {
+  white-space: pre;
+}
+
 .page-footer__col-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   margin-left: auto;
 }
 
@@ -357,4 +353,40 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.page-footer__col-contacts a {
+  display: inline-block;
+  margin-bottom: 21px;
+}
+
+.page-footer__col-contacts .social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.page-footer__row-bottom p {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: var(--main-text-color);
+}
+
+.page-footer__row-bottom {
+  margin-top: 33px;
+}
+
+.page-footer__row-bottom a {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: var(--main-text-color);
 }
