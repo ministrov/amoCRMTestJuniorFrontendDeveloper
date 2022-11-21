@@ -73,13 +73,14 @@ a {
   display: block;
   width: 140px;
   height: 24px;
-  margin-right: 24px;
+  margin-right: 53px;
 }
 
 .main-navigation__site-navigation {
   display: flex;
   max-width: 503px;
   margin: 0;
+  margin-top: 7px;
   padding: 0;
   list-style: none;
 }
@@ -107,6 +108,7 @@ a {
 .main-navigation__wrapper {
   display: flex;
   align-items: center;
+  margin-top: 8px;
   margin-left: auto;
 }
 
@@ -204,6 +206,8 @@ a {
 .main-content__slogan {
   max-width: 291px;
   margin: 0;
+  margin-top: 18px;
+  margin-left: 18px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -269,13 +273,11 @@ a {
 
 .main-content__button {
   display: block;
-  max-width: 262px;
-  margin-top: 82px;
+  min-width: 262px;
+  margin-top: 63px;
   margin-left: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 22px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -284,6 +286,11 @@ a {
   text-align: center;
   color: var(--main-text-color);
   background-color: var( --main-button-color);
+  cursor: pointer;
+}
+
+.main-content__button:hover {
+  opacity: 0.4;
 }
 
 /* footer */
@@ -322,11 +329,13 @@ a {
 }
 
 .page-footer li:not(:last-child) {
+  max-width: 195px;
   margin-bottom: 10px;
 }
 
 .page-footer address {
   display: block;
+  margin-top: 9px;
 }
 
 .page-footer__row-top {
@@ -346,7 +355,6 @@ a {
 .page-footer__col-menu ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 52px;
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -391,11 +399,12 @@ a {
 }
 
 .page-footer__row-bottom {
-  margin-top: 33px;
+  margin-top: 20px;
 }
 
 .page-footer__row-bottom a {
   display: block;
+  margin-top: 5px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -484,7 +493,7 @@ a {
   .page-header {
     max-width: 100%;
     width: 320px;
-    padding-top: 24px;
+    padding-top: 10px;
   }
 
   .site-navigation__item:not(:last-child) {
@@ -497,7 +506,7 @@ a {
   }
 
   .main-content {
-    padding-top: 40px;
+    padding-top: 59px;
   }
 
   .main-content__title {
@@ -516,7 +525,16 @@ a {
   }
 
   .main-content__slogan {
+    margin-top: 0;
+    margin-left: 0;
     text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .main-content__slogan span {
+    text-transform: lowercase;
   }
 
   .main-content__list {
@@ -528,6 +546,28 @@ a {
     row-gap: 14px;
     max-width: 280px;
   }
+
+  .gifts__item {
+    padding-left: 12px;
+  }
+
+  .gifts__item:nth-child(2) {
+    order: 3;
+  }
+
+  .gifts__item:nth-child(3) {
+    order: 1;
+  }
+
+  .gifts__item:nth-child(1) {
+    order: 2;
+  }
+
+  .gifts__item:nth-child(4) {
+    order: 4;
+  }
+
+
 
   .gifts__header {
     font-size: 13px;
